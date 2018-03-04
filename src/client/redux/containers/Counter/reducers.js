@@ -1,5 +1,3 @@
-const { combineReducers } = require('redux')
-
 const counter = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
@@ -11,6 +9,4 @@ const counter = (state = 0, action) => {
   }
 }
 
-module.exports = combineReducers({
-  counter
-})
+module.exports = counter
